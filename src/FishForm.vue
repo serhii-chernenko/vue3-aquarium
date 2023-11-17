@@ -43,6 +43,8 @@ const addFish = () => {
 };
 
 const getRandomName = () => randomNames[Math.floor(Math.random() * randomNames.length)];
+
+const getFishImage = fish => new URL(`../public/${ fish }.png`, import.meta.url).href;
 </script>
 <template>
   <transition name="overlay">
@@ -66,7 +68,7 @@ const getRandomName = () => randomNames[Math.floor(Math.random() * randomNames.l
                 <li v-for="(fish, index) in types" :key="index">
                   <label class="cursor-pointer">
                     <input type="radio" name="type" v-model="type" :value="fish" class="appearance-none">
-                    <img :src="`/${ fish }.png`"
+                    <img :src="getFishImage(fish)"
                          :alt="fish"
                          class="w-24"
                          :class="{ 'drop-shadow-[0_6px_4px_rgba(0,200,255,0.8)]': type === fish }"

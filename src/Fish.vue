@@ -8,11 +8,13 @@ const props = defineProps({
 const feed = () => {
   console.log(`Feed ${props.name}!`);
 };
+
+const getFishImage = type => new URL(`../public/${ type }.png`, import.meta.url).href;
 </script>
 
 <template>
   <button @click="feed" class="relative z-10">
-    <img :src="`/${type}.png`"
+    <img :src="getFishImage(type)"
          :alt="name"
          :title="name"
          class="block w-24"
