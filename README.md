@@ -31,4 +31,4 @@ Your task is to create a fun and functional Vue.js powered virtual aquarium.
 
 This is an example of what the functionality might look like at the end of the exercise.
 
-![gif of the finished aquarium app](https://imgur.com/BTT0xxK.gif)
+![gif of the finished aquarium app](https://media.githubusercontent.com/media/serhii-chernenko/vue3-aquarium/main/aquarium.gif)
