@@ -32,7 +32,7 @@ const deleteFish = id => {
           }"
           @click.exact="isAdding = true"
   >
-    <span class="block flex items-center justify-center w-24 h-24 p-2 rounded-full bg-white shadow-lg hover:bg-cyan-300 transition-colors add-fish">
+    <span class="block flex items-center justify-center w-24 h-24 p-2 rounded-full bg-cyan-300 shadow-lg hover:bg-white transition-colors add-fish">
       <span class="material-symbols-outlined text-4xl">add</span>
     </span>
   </button>
