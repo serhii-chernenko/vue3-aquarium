@@ -25,14 +25,16 @@ const deleteFish = id => {
   </div>
   <button type="button"
           title="Add a fish"
-          class="fixed z-10 flex items-center justify-center w-24 h-24 p-2 rounded-full bg-white shadow-lg hover:bg-cyan-300 transition-colors add-fish"
+          class="fixed z-10"
           :class="{
             'top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2': !fishes.length,
             'bottom-4 right-4': fishes.length,
           }"
           @click.exact="isAdding = true"
   >
-    <span class="material-symbols-outlined text-4xl">add</span>
+    <span class="block flex items-center justify-center w-24 h-24 p-2 rounded-full bg-white shadow-lg hover:bg-cyan-300 transition-colors add-fish">
+      <span class="material-symbols-outlined text-4xl">add</span>
+    </span>
   </button>
 </template>
 
