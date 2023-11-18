@@ -25,7 +25,7 @@ const closeModal = () => {
 
 // See names in public .png images
 const types = shallowReactive(['golden-purple-fish', 'goldfish', 'guppie', 'tropical-fish', 'tuna']);
-const randomNames = ['Thor', 'Locky', 'Iron Man', 'Hulk', 'Cap', 'Marvel', 'Dr. Strange', 'Vision', 'Wanda', 'Spider Man'];
+const randomNames = ['Thor', 'Locky', 'Iron Man', 'Hulk', 'Cap', 'Marvel', 'Dr. Strange', 'Vision', 'Wanda', 'Spider-Man'];
 const name = shallowRef('');
 const type = shallowRef(types[0]);
 
